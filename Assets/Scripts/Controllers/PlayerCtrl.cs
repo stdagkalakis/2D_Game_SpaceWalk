@@ -148,7 +148,11 @@ public class PlayerCtrl : MonoBehaviour
                 break;
             case "PowerUpBullet":
                 canFire = true;
+                AudioCtrl.instance.PickUpPowerUp(gameObject.transform.position);
+                if (sfxOn)
+                    SFXCtrl.instance.ShowBulletPickUpEffect(other.gameObject.transform.position);
                 Destroy(other.gameObject);
+
                 break;
             case "Water":
                 garbageCtrl.SetActive(false);

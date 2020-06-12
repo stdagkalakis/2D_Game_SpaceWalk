@@ -22,4 +22,8 @@ public class SFXCtrl : MonoBehaviour
     {
         Instantiate(sfx.sfxCoinPickUp, pos, Quaternion.identity);
     }
+    public void ShowBulletPickUpEffect(Vector3 pos)
+    {
+        Instantiate(sfx.sfxBulletPickUp, pos, Quaternion.identity);
+    }
 }

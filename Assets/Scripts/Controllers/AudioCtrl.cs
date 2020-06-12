@@ -48,6 +48,13 @@ public class AudioCtrl : MonoBehaviour
 
     }
 
+    public void PickUpPowerUp(Vector3 playerPos)
+    {
+        if (!mute)
+        {
+            AudioSource.PlayClipAtPoint(playerAudio.powerUp, playerPos);
+        }
+    }
 
     public void ToggleBGMusic()
     {

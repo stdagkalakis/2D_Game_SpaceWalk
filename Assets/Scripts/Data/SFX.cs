@@ -8,5 +8,6 @@ public class SFX
 {
 
     public GameObject sfxCoinPickUp;
+    public GameObject sfxBulletPickUp;
 
 }

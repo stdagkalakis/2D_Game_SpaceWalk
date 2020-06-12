@@ -2537,6 +2537,7 @@ MonoBehaviour:
     playerJump: {fileID: 8300000, guid: a9cfbe28d5b08456d8c5ce295e2251c3, type: 3}
     pickUpCoin: {fileID: 8300000, guid: a89601ea0d7d74b8790ff9848e43152c, type: 3}
     fireBullet: {fileID: 8300000, guid: c56b201bbe07749fcb1002a7ac524160, type: 3}
+    powerUp: {fileID: 8300000, guid: 5151bf2fb61d4451eb5fb7356c0499c3, type: 3}
   player: {fileID: 91469213}
   BGMusic: {fileID: 1619304728}
   muteBG: 0
@@ -6390,7 +6391,7 @@ Transform:
   - {fileID: 879425270}
   - {fileID: 496698701}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785557617 stripped
 GameObject:
@@ -11174,7 +11175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4348380423535160, guid: fe46685eacf754b53b176aec2a4ebda8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114385217587637182, guid: fe46685eacf754b53b176aec2a4ebda8,
         type: 3}
@@ -13484,7 +13485,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx:
-    sfxCoinPickUp: {fileID: 116108, guid: 520a250d5ad784c9daafddc2a8d8db7b, type: 3}
+    sfxCoinPickUp: {fileID: 116108, guid: b75e2efacfcef4cc2a1d11d778ecece7, type: 3}
+    sfxBulletPickUp: {fileID: 116108, guid: 520a250d5ad784c9daafddc2a8d8db7b, type: 3}
 --- !u!1001 &1588621109
 PrefabInstance:
   m_ObjectHideFlags: 0
