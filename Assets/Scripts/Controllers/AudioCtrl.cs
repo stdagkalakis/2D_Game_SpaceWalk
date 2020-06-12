@@ -1,6 +1,9 @@
 ﻿
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
+/// <summary>
+/// Audio controller responsible for handling Audio (such as bg music) player sounds (pick up, jump etc)
+/// </summary>
 
 public class AudioCtrl : MonoBehaviour
 {

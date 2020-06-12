@@ -143,22 +143,16 @@ public class GameCtrl : MonoBehaviour
     {
         LoadData();
     }
-
-
     void OnDisable()
     {
         SaveData();
         Time.timeScale = 1; // Reset time in case of exit from pause
     }
 
-    /// <summary>
-    /// PLayerd died restart level.
-    /// </summary>
     public void PlayerDied(GameObject player)
     {
         player.SetActive(false);
         CheckLives();
-        // Invoke("RestartLevelWithDelay", restartDelay);
     }
 
     void RestartLevelWithDelay()

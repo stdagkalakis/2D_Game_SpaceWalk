@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// Make player move left/ right
+/// Control important aspects of the player such as movement, collision etc.
 /// </summary>
 public class PlayerCtrl : MonoBehaviour
 {

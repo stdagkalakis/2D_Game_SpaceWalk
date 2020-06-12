@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Special effects controller, enable special effect instantiation, 
+/// Such as when a player picks up a coin, 
+/// </summary>
 public class SFXCtrl : MonoBehaviour
 {
     public static SFXCtrl instance;
@@ -13,11 +17,6 @@ public class SFXCtrl : MonoBehaviour
             instance = this;
     }
 
-
-
-    /// <summary>
-    /// Shows coin effect when the player collects the coin
-    /// </summary>
     public void ShowCoinPickUpEffect(Vector3 pos)
     {
         Instantiate(sfx.sfxCoinPickUp, pos, Quaternion.identity);

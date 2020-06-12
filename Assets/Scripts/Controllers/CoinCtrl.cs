@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controls coin behaviour, pick up on collision.
+/// </summary>
 public class CoinCtrl : MonoBehaviour
 {
     public enum CoinFX
@@ -17,20 +20,18 @@ public class CoinCtrl : MonoBehaviour
 
     Vector3 endPos;
 
-    /// <summary>
-    /// Update is called every frame, if the MonoBehaviour is enabled.
-    /// </summary>
     void Update()
     {
+        // fly upwards
         if (startFlying)
             transform.position = Vector3.MoveTowards(transform.position, endPos, speed * Time.deltaTime);
-        // transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, transform.position.y + 40f, transform.position.y), speed);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             gameObject.GetComponent<Collider2D>().enabled = false;
+            // Pick up effect, vanish of Fly upwards
             if (coinFX == CoinFX.Vanish)
                 Destroy(gameObject);
             else if (coinFX == CoinFX.Fly)

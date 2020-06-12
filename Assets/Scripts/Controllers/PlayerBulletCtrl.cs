@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Control the bullet and detect enemies and other objects.
+/// </summary>
 public class PlayerBulletCtrl : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -25,7 +26,6 @@ public class PlayerBulletCtrl : MonoBehaviour
         }
         else if (!other.gameObject.CompareTag("Player"))    // Destroy bullet on contact
         {
-
             Destroy(gameObject);
         }
     }

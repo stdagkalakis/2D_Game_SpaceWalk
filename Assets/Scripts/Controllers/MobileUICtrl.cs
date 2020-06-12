@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Mobile player controls, enable character use from mobile UI controls
+/// </summary>
 public class MobileUICtrl : MonoBehaviour
 {
 

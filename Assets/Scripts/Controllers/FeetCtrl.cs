@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Feet controller, to detect ground and platforms.
+/// </summary>
 public class FeetCtrl : MonoBehaviour
 {
 

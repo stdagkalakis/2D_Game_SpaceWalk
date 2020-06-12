@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Follow the player.
+/// </summary>
 public class CameraCtrl : MonoBehaviour
 {
-
-
     public Transform player;
 
     void Update()
